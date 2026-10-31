@@ -95,7 +95,17 @@ From the [October 13, 2026 Q&A](/docs/rules), which overrides the rulebook where
 
 ## Playfield Scale Models
 
-The image at the top of this page shows scale models of all five fields, modeled in Fusion 360 from the dimensions in the rulebook and Q&A. They are used to check reach, clearances, and mechanism sizing before anything is built. The model files will be added to [`/hardware/playfield_models`](/hardware/playfield_models).
+The image at the top of this page shows scale models of all five fields, modeled in Fusion 360 from the dimensions in the rulebook and Q&A. They are used to check reach, clearances, and mechanism sizing before anything is built. Each field element is a separate Fusion 360 design (`.f3d`) in [`/hardware/playfield_models`](/hardware/playfield_models):
+
+| Discipline | Models |
+|---|---|
+| [The Sprint](/hardware/playfield_models/sprint) | Play Field, Gate, Hurdle |
+| [The Lift](/hardware/playfield_models/lift) | Play Field, Podium, Loading Zone |
+| [The Cycle](/hardware/playfield_models/cycle) | Play Field, High Goal, Low Goal, Ball, Ball Supply |
+| [The Marksman](/hardware/playfield_models/marksman) | Play Field, Target, No-Cross Zone Line, Bean Bag |
+| [The Ascent](/hardware/playfield_models/ascent) | Play Field, Wall |
+
+Open any file in Fusion with **File → Open → Open from my computer**.
 
 ## Inspection Checklist
 
@@ -136,7 +146,12 @@ EWU-ASME-SDC-2027-Robot/
 │       ├── CY27 ASME SDC Rules FINAL_August 2026.pdf
 │       └── CY27 - SDC QA 10.13.26.pdf
 └── hardware/
-    └── playfield_models/                   # Fusion 360 playfield models
+    └── playfield_models/                   # Fusion 360 playfield models (.f3d)
+        ├── sprint/
+        ├── lift/
+        ├── cycle/
+        ├── marksman/
+        └── ascent/
 ```
 
 ## Bill of Materials
